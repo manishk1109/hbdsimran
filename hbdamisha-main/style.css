@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    background-image: url(images/Untitled\ design.png);
+    background-size: cover;
+}
+
+.container {
+    
+    padding-top: 10vh;
+    display: flex;
+    /* background-color: rgba(18, 19, 20, 0.155); */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-inline: 10vw;
+    gap: 50px;
+
+
+}
+
+.card {
+    height: 482px;
+    width: 336px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: 2s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.inside,
+.outside {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border-radius: 34px;
+}
+
+.outside {
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: #ffb8de;
+
+}
+
+.outside h1 {
+    font-family: 'WindSong', cursive;
+    color: #840032;
+    font-size: 66px;
+    margin-top: 7px;
+}
+
+.outsideimg {
+    height: 189px;
+    margin-top: 19px;
+    border-radius: 40px;
+}
+
+.blend {
+    height: 91px;
+    position: absolute;
+    bottom: 0px;
+    right: 122px;
+}
+
+.inside {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #fdfcdc;
+}
+
+.inside img {
+    margin-top: 20px;
+}
+
+.inside p {
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+
+
+.leftContent {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    width: 30vw;
+    flex-direction: column;
+
+
+
+}
+
+.flex {
+    display: flex;
+}
+
+.imageBox {
+
+    
+    width: 700px;
+    display: flex;
+    transform: rotateY(327deg) rotateX(339deg);
+    margin-top: 10px;
+    right: 0px;
+    justify-content: space-between;
+    gap: 10px;
+    padding-inline: 20px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+
+
+}
+
+.imageBox:hover {
+    box-shadow: 0 0 20px black;
+}
+
+.imageBox img {
+    height: 210px;
+    padding: 2px;
+    border-radius: 30px;
+}
+
+.Box1 {
+    background-color: #fdffb6;
+
+}
+
+.Box2 {
+    background-color: #9bf6ff;
+    z-index: 2;
+
+}
+
+.Box3 {
+    background-color: #ffecd1;
+    top: 64vh;
+    z-index: 3;
+
+}
+
+.mainNext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.nextPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb8de;
+    border-radius: 20px;
+}
+
+.nextPage h1{
+   padding: 10px;
+}
+
+.nextPage a{
+    color: black;
+}
+
+.nextImg{
+    height: 180px;
+    padding: 10px;
+}
+
+@media screen and (max-width : 1200px) {
+
+    .container {
+        background-image: url(images/Untitled\ design.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-inline: 0px;
+        align-items: flex-start;
+    
+    
+    }
+
+    .card {
+        height: 510px;
+        width: 336px;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: 2s ease-in-out;
+        text-align: center;
+        cursor: pointer;
+        margin-inline: auto;
+
+    }
+
+    .imageBox {
+        
+        width: 98vw;
+        display: flex;
+        transform: rotateY(320deg) rotateX(342deg);
+        margin-top: 10px;
+        right: 0px;
+        justify-content: space-between;
+        gap: 10px;
+        padding-inline: 20px;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+
+    
+    
+
+
+
+    
+ 
+}
+
+@media screen and (max-width : 700px) {
+
+    .container {
+        background-image: url(images/Untitled\ design.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-inline: 0px;
+        align-items: flex-start;
+    
+    
+    }
+
+    .card {
+        height: 510px;
+        width: 336px;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: 2s ease-in-out;
+        text-align: center;
+        cursor: pointer;
+        margin-inline: auto;
+
+    }
+
+    /* .imageBox {
+       
+        width: 98vw;
+        display: flex;
+        transform: rotateY(326deg) rotateX(20deg);
+        margin-top: 10px;
+        right: 0px;
+        justify-content: space-between;
+        gap: 10px;
+        padding-inline: 20px;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 30px;
+    } */
+    
+    
+}
